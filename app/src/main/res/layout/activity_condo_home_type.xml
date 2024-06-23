@@ -5,11 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CondoHomeTypeActivity">
+    tools:context=".activity.CondoHomeTypeActivity">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="com.example.excercise1.HomeTypeToolBarFragment"
+        android:name="com.example.excercise1.fragment.HomeTypeToolBarFragment"
         android:layout_width="match_parent"
         android:layout_height="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,4 +19,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer_house_list"
+        android:name="com.example.excercise1.fragment.HouseListFragment"
+        android:layout_width="408dp"
+        android:layout_height="756dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

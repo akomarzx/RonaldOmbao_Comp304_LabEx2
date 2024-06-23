@@ -1,4 +1,4 @@
-package com.example.excercise1
+package com.example.excercise1.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.excercise1.R
 import com.google.android.material.appbar.MaterialToolbar
 
 
