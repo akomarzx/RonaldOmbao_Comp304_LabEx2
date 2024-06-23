@@ -16,14 +16,12 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //binding.buttonMain.setOnClickListener(this)
+        binding.buttonMainEnter.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
-//        val intent = Intent(this, SecondActivity::class.java).apply {
-//            putExtra("hello", binding.textViewMain.text.toString())
-//            putExtra("part2", 20)
-//        }
-//        startActivity(intent)
+        val intent = Intent(this, HomeTypesActivity::class.java)
+        startActivity(intent)
     }
+
 }
