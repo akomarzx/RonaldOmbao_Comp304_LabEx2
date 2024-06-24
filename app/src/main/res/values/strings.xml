@@ -10,4 +10,16 @@
     <string name="home_menu_condominium_apartment">Condominium Apartment</string>
     <string name="home_menu_townhouse">Townhouse</string>
     <string name="home_selections_title">Home Selections</string>
+    <string name="photo_of_a_house_alt">Photo of a house</string>
+    <string name="expiry_date_hint">Expiry Date (MM/YYYY)</string>
+    <string name="cvv_hint">CVV</string>
+    <string name="checkout_button_text">Checkout</string>
+    <string name="card_number_hint">Card Number</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="proceed_to_checkout_text">Proceed To Checkout</string>
+    <string name="checking_out">Checking Out - %1$s</string>
+    <string name="full_name_is_required_message">Full name is required</string>
+    <string name="card_number_is_required_message">Card number is required</string>
+    <string name="invalid_card_number_message">Invalid card number</string>
+    <string name="expiry_cannot_be_blank_message">Expiry cannot be blank</string>
 </resources>

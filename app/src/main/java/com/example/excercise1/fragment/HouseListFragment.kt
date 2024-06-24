@@ -43,7 +43,11 @@ class HouseListFragment : Fragment() {
                     else -> GridLayoutManager(context, columnCount)
                 }
                 val type : HouseType? = houseTypeStr?.let { HouseType.valueOf(it) }
-                adapter = MyHouseItemRecyclerViewAdapter(HomeDataSource.getHouseByType(type))
+                adapter = activity?.let {
+                    MyHouseItemRecyclerViewAdapter(HomeDataSource.getHouseByType(type),
+                        it
+                    )
+                }
             }
         }
         return view

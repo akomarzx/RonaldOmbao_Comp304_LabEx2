@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CheckoutHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Full Name Field -->
+        <TextView
+            android:id="@+id/textView_item_to_buy"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:textColorLink="#000000"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEdit_FullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name_hint"
+                android:textColorLink="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Card Number Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEdit_CardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_number_hint"
+                android:textColorLink="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Expiry Date Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtEdit_expiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/expiry_date_hint"
+                android:textColorLink="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- CVV Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilCVV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Button to Proceed -->
+        <Button
+            android:id="@+id/btn_checkout"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="@string/checkout_button_text"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
